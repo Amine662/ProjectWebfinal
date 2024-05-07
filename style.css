@@ -136,6 +136,7 @@ header {
 .two{
     margin: 0;
 }
+
 .three {
     margin: auto;
     flex: auto;
@@ -152,7 +153,7 @@ header {
     width: 30%;
     height: 100%;
 }
-.adress{
+.address{
     width: 40%;
     height:100%;
 }
@@ -182,106 +183,102 @@ header {
     line-height: 1.6;
     margin-bottom: 10px;
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-}
 
-th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-.header-content {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-}
-
-.site-title {
-    text-align: right; 
-}
-
-.logo {
-    margin-left: auto;
-}
-#divo div a{
-    display: block;
-    margin-bottom: 10px;
-}
-.main {
-    flex-grow: 1;
-    margin-right: 20px; 
-    margin-left: 20px;
-}
-.containerr{
-    width: 750px;
-    height: 500px;
-    border: 1px solid;
-    background-color: white;
+.reservation{
+    margin:50px;
     display: flex;
     flex-direction: column;
-    padding: 40px;
-    justify-content:space-around;
+    padding:20px;
+
+
 }
-.containerr h1{
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
+fieldset {
+    border: 2px solid black;
 }
 
-.first-row{
-     display: flex;
+
+.reservation input{
+    width:200px;
 }
 
-.owner{
-    width: 100%;
+.reservation textarea{
+    width:500px;
+}
+
+.reservation select{
+    width:100px;
+}
+
+.client{
+    margin:50px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+}
+
+legend{
+    font-size: 1.5em;
+    background-color: #f6b319;
+    border-radius: 30px;
+    font-style: oblique;
+}
+
+fieldset div{
+    margin:10px;
+}
+
+.reservation label,.client label,.recrutement_main label{
+    font-size: 1.2em;
+    margin-bottom:10px;
+}
+
+fieldset{
+    margin:40px;
+    color:#fff;
+}
+
+.send_reservation{
+    display: flex;
+    border-radius: 30px;
+    font-size:1.5em;
+    font-style: oblique;
+    padding:15px;
+    margin:0 auto;
+    margin-bottom:50px;
+    color:white;
+    background-color: #f6b319;
+
+}
+
+.recrutement_main p{
+    text-align:justify;
+    font-size: 1.2em;
+    padding:15px;
+    color: #fff;
+
+
+}
+
+.recrutement_main label[for="nom"]{
     margin-right: 40px;
 }
-
-.input-field{
-    border: 1px solid #999;
+.recrutement_main label[for="telephone"]{
+    margin-right: 4px;
 }
 
-.input-field input{
-    width: 100%;
-    border:none;
-    outline: none;
-    padding: 10px;
-}
-
-.selection{
+.references{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    width: 500px;
 }
 
-.selection select{
-    padding: 10px 20px;
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1; }
 }
 
-.containerr a{
-    background-color:grey;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 18px;
-    transition: 0.5s;
-}
-
-a:hover{
-    background-color: dodgerblue;
-}
-
-.cards img{
-    width: 100px;
+.lien_recrutement{
+    animation: blink 1s infinite;
 }
