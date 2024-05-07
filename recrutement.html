@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <header>
+        <div class="container2">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/chinatownlogo.jpg" alt="Logo">
+                    </a>
+                </div>
+                <div class="site-title">
+                    <h1><a href="index.html">China Town Resto</a></h1>
+                    <p>
+                        <img src="images/star-k-logo.jpg" alt="Kosher certification">
+                        <span>Kosher Certified</span>
+                    </p>
+                </div>
+                <!-- <button id="navbarToggle" class="navbar-toggle" aria-controls="collapsable-nav" aria-expanded="false">
+                    <span class="toggle-icon"></span>
+                    <span class="toggle-icon"></span>
+                    <span class="toggle-icon"></span>
+                </button> -->
+                <nav id="divo">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li class="hidden-xs">
+                            <div id="phone-number">
+                                <a href="tel:27588699">27 588 699</a>
+                            </div>
+                            <div id="delivery-info">* We Deliver<br><br></div>
+                            <div class="lien_recrutement"><a href="recrutement.html"><strong>*We're Hiring !</strong></a></div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="recrutement_main">
+        <p>
+            Join our team at <em><strong>China Town</strong></em>, where every dish tells a story and every customer leaves with a smile.
+            We're looking for dedicated individuals who share our love for authentic Chinese cuisine and hospitality.<br><br>
+            Together, let's create memorable dining moments and embark on an exciting journey in the heart of our kitchen.<br>
+            <strong><span style="font-size: larger;">Fill out the form below to take the first step towards becoming a valued member of our team!</span></strong>
+        </p>
+        <form action="" method="post">
+            <fieldset >
+                <legend>Application form</legend>
+                <div>
+                    <label for="nom"><strong>Full Name :</strong></label>
+                    <input type="text" id="nom" name="nom" required><br>
+                </div>
+                <div>
+                    <label for="email"><strong>E-mail Address :</strong></label>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+                <div>
+                    <label for="telephone"><strong>Phone number :</strong></label>
+                    <input type="tel" id="telephone" name="telephone" required><br>
+                </div>
+                <div>
+                    <label for="age"><strong>Age :</strong></label>
+                    <input type="number" id="age" name="age" min="18" required><br>
+                </div>
+                <div><label><strong>Desired Position:</strong></label><br>
+                <input type="radio" id="chef" name="position" value="Chef" required>
+                <label for="chef">Chef</label><br>
+        
+                <input type="radio" id="waiter" name="position" value="Waiter/Waitress" required>
+                <label for="waiter">Waiter/Waitress</label><br>
+        
+                <input type="radio" id="kitchen_staff" name="position" value="Kitchen Staff" required>
+                <label for="kitchen_staff">Kitchen Staff</label><br>
+        
+                <input type="radio" id="manager" name="position" value="Manager" required>
+                <label for="manager">Manager</label><br>
+        
+                <input type="radio" id="other" name="position" value="Other" required>
+                <label for="other">Other</label><br>
+                </div>
+                <div><label for="experience"><strong> Years of Experience:</strong></label>
+                <input type="number" id="experience" name="experience" required></div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <div><label for="languages"><strong>Languages Spoken:</strong></label>
+                <input type="text" id="languages" name="languages"></div>
+    
+                <div><label for="availability"><strong>Availability:</strong></label>
+                <input type="text" id="availability" name="availability"></div>
+    
+                <div class="references"><label for="references"><strong>References (Optional):</strong></label>
+                <textarea id="references" name="references" rows="4" cols="50"></textarea></div>
+            </fieldset>
+            <input type="submit" value="Send Application" class="send_reservation">
+
+        </form>
+    </main> 
+    <div class="footer" style="position:relative;bottom: 0;color: aliceblue  ;">
+        <div class="container">
+            <section class="hours">
+                <span style="font-size: large;font-family: Arial, Helvetica, sans-serif;">Hours</span>
+                <br>"
+                Sun-Thurs: 11:15am - 10:00pm"
+                <br>
+                "Fri: 11:15am - 2:30pm"
+                <br>
+                "Saturday Closed"
+            </section>
+            <section class="adress">
+                <span style="font-size: large;font-family: Arial, Helvetica, sans-serif;">Adress</span>
+                <br>
+                " 47 Rue des Jasmins, Ain Zaghouan 2045"
+            </section>
+            
+            <section class="random">
+                <span style="font-size: large;font-family: Arial, Helvetica, sans-serif;">Customers</span>
+
+                <p>
+                ""The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!""
+                </p>
+                <p>
+                    ""Amazing food! Great service! Couldn't ask for more! I'll be back again and again!""
+                </p>
+            </section>
+        </div>
+        <div style="text-align: center;">© Copyright China Town Resto</div>
+    </div>  
+</body>
