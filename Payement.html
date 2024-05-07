@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prototype</title>
     <link rel="stylesheet" href="style.css">
+    <script rel="checkoutt.js"></script>
 </head>
 <body >
     <header>
@@ -14,114 +15,98 @@
                 <div class="logo">
                     <a href="index.html">
                         <img src="images/chinatownlogo.jpg" alt="Logo">
-                    </a>
-                </div>
+                    </a>                </div>
                 <div class="site-title">
                     <h1><a href="index.html">China Town Resto</a></h1>
                     <p>
-                        <img src="images/star-k-logo.png" alt="Kosher certification">
+                        <img src="images/star-k-logo.jpg" alt="Kosher certification">
                         <span>Kosher Certified</span>
                     </p>
                 </div>
+                <!-- <button id="navbarToggle" class="navbar-toggle" aria-controls="collapsable-nav" aria-expanded="false">
+                    <span class="toggle-icon"></span>
+                    <span class="toggle-icon"></span>
+                    <span class="toggle-icon"></span>
+                </button> -->
+                <nav id="divo">
+                    <ul>
+                        <li><a href="index.html" onmouseover="zoomin(this)" onmouseout="zoomout(this)">Home</a></li>
+                        <li><a href="index.html" onmouseover="zoomin(this)" onmouseout="zoomout(this)">Menu</a></li>
+                        <li><a href="about.html" onmouseover="zoomin(this)" onmouseout="zoomout(this)">About</a></li>
+                        <li><a href="feedback.html" onmouseover="zoomin(this)" onmouseout="zoomout(this)">Feedback</a></li>
+                        <li class="hidden-xs">
+                            <div id="phone-number">
+                                <a href="tel:27588699">27 588 699</a>
+                            </div>
+                            <div id="delivery-info">* We Deliver</div>
+                            <div class="lien_recrutement"><a href="recrutement.html" ><strong>*We're Hiring !</strong></a></div>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </header>
-    </div> 
-    <div class="main" style="display: flex;">
-        <nav id="divo" >
-            <ul style="flex:1;">
-                <li style="height: 100px; width: 200px; display: flex; justify-content: center; align-items: center;"><a href="index.html">⠀⠀⠀⠀Home</a></li>
-                <li style="height: 100px; width: 200px; display: flex; justify-content: center; align-items: center;"><a href="menu.html">Menu</a></li>
-                <li style="height: 100px; width: 200px; display: flex; justify-content: center; align-items: center;"><a href="about.html">About</a></li>
-                <li style="height: 100px; width: 200px; display: flex; justify-content: center; align-items: center;"><a href="feedback.html">Feedback</a></li>
-                <li style="height: 100px; width: 200px; display: flex; justify-content: center; align-items: center;" class="hidden-xs">
-                    <div id="phone-number">
-                        <a href="tel:27588699">27 588 699</a>
-                    </div>
-                    <div id="delivery-info">* We Deliver</div>
-                </li>
-            </ul>
-        </nav>
-        <div style="flex: 1;">
-            <h1 style="align-items: center;font-size: large;font-family: Arial, Helvetica, sans-serif;">HOW'D WE DO?</h1><br><br><br><br>
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" name="first-name" required><br><br>
-        
-                <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" name="last-name" required><br><br>
-            </fieldset><br><br><br><br>
-            <h2>Select your preferences:</h2><br><br><br><br>
-            <form>
-                <label for="vegetarian">Vegetarian</label>
-                <input type="checkbox" id="vegetarian" name="vegetarian" value="vegetarian">
-        
-                <label for="vegan">Vegan</label>
-                <input type="checkbox" id="vegan" name="vegan" value="vegan">
-        
-                <label for="gluten-free">Gluten-free</label>
-                <input type="checkbox" id="gluten-free" name="gluten-free" value="gluten-free">
-            </form><br><br>
+    </header>  
+    <div class="containerr" style="margin: auto;">
+        <h1>Confirm Your Payment</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Owner</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="password">
+                </div>
+            </div>
         </div>
-        <div style="flex: 1;">
-            <h3 >Pick a Number to rate us</h1>
-                <form>
-                    <label for="options">Service</label>
-                    <select id="options" name="options">
-                        <option value="option1">1</option>
-                        <option value="option2">2</option>
-                        <option value="option3">3</option>
-                        <option value="option4">4</option>
-                        <option value="option5">5</option>
-                    </select><br><br> 
-                    <label for="options">Food</label>
-                    <select id="options" name="options">
-                        <option value="option1">1</option>
-                        <option value="option2">2</option>
-                        <option value="option3">3</option>
-                        <option value="option4">4</option>
-                        <option value="option5">5</option>
-                    </select><br><br> 
-                    <label for="options">Drinks</label>
-                    <select id="options" name="options">
-                        <option value="option1">1</option>
-                        <option value="option2">2</option>
-                        <option value="option3">3</option>
-                        <option value="option4">4</option>
-                        <option value="option5">5</option>
-                    </select><br><br> 
-                    <label for="options">Ambiance</label>
-                    <select id="options" name="options">
-                        <option value="option1">1</option>
-                        <option value="option2">2</option>
-                        <option value="option3">3</option>
-                        <option value="option4">4</option>
-                        <option value="option5">5</option>
-                    </select><br><br> 
-                    <label for="options">Cleanliness</label>
-                    <select id="options" name="options">
-                        <option value="option1">1</option>
-                        <option value="option2">2</option>
-                        <option value="option3">3</option>
-                        <option value="option4">4</option>
-                        <option value="option5">5</option>
-                    </select><br><br><br>
-                    <label for="comment">Comment:</label><br>
-                    <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
-                    <br><br><br>
-                    <label>Are you satisfied?</label><br>
-                    <input type="radio" id="satisfied_yes" name="satisfied" value="yes">
-                    <label for="satisfied_yes">Yes</label>
-                    <input type="radio" id="satisfied_no" name="satisfied" value="no">
-                    <label for="satisfied_no">No</label>
-                    <br><br><br>
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="reset">
-                  </form>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
         </div>
+        <div class="third-row">
+            <h3>Card Number</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                      </select>
+                      <select name="years" id="years">
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                      </select>
+                </div>
+                <div class="cards">
+                    <img src="mc.png" alt="">
+                    <img src="vi.png" alt="">
+                    <img src="pp.png" alt="">
+                </div>
+            </div>    
+        </div>
+        <a href="">Confirm</a>
     </div>
-    <div class="footer" style="position:relative;bottom: 0;color: aliceblue  ;">
+    <div class="footer" style="position:relative;bottom: 0;color: aliceblue  ;position:relative;">
         <div class="container">
             <section class="hours">
                 <span style="font-size: large;font-family: Arial, Helvetica, sans-serif;">Hours</span>
@@ -132,8 +117,8 @@
                 <br>
                 "Saturday Closed"
             </section>
-            <section class="adress">
-                <span style="font-size: large;font-family: Arial, Helvetica, sans-serif;">Adress</span>
+            <section class="address">
+                <span style="font-size: large;font-family: Arial, Helvetica, sans-serif;">Address</span>
                 <br>
                 " 47 Rue des Jasmins, Ain Zaghouan 2045"
             </section>
